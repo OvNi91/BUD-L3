@@ -23,5 +23,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button insc = (Button) findViewById(R.id.button_formulaire);
+        insc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(),inscription_formulaire.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 }
