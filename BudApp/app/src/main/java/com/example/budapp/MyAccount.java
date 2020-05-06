@@ -21,6 +21,16 @@ public class MyAccount extends AppCompatActivity {
         TextView email = (TextView) findViewById(R.id.textView_mail);
         TextView mdp = (TextView) findViewById(R.id.textView_mdp_text);
 
+        TextView logement1 = (TextView) findViewById(R.id.textView_logement1);
+        TextView logement2 = (TextView) findViewById(R.id.textView_logement2);
+        TextView logement3 = (TextView) findViewById(R.id.textView_logement3);
+
+
+        String logement_1 = new String("Logement 1");
+        logement1.setText(logement_1);
+        String logement_2 = new String("Logement 2");
+        logement2.setText(logement_2);
+
 
 
         String test = new String("hugo.butery@efrei.fr");
