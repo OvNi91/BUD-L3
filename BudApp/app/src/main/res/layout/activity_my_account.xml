@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MyAccount">
 
-
     <TextView
         android:id="@+id/mes_logements_textView"
         android:layout_width="wrap_content"
@@ -127,18 +126,24 @@
             <TextView
                 android:id="@+id/textView_logement1"
                 android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
                 android:layout_height="50dp"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_logement2"
                 android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
                 android:layout_height="50dp"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_logement3"
                 android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
                 android:layout_height="50dp"
                 android:textSize="18sp" />
         </LinearLayout>
