@@ -1,5 +1,5 @@
 # BUD-L3
-Bud, votre écol-logis ;)
+Bud, votre éco-logis ;)
 
 ## Ressources utiles au développement :)
 - [Cours OpenClassrooms pour faires des applis android](https://openclassrooms.com/fr/courses/2023346-creez-des-applications-pour-android)
