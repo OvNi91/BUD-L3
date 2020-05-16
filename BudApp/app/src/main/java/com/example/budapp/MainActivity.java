@@ -32,5 +32,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button logement = (Button) findViewById(R.id.button_monLogement);
+        logement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(),mon_logement.class);
+                startActivity(startIntent);
+            }
+        });
     }
 }

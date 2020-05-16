@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mon_logement">
+
+    <TextView
+        android:id="@+id/textView_monLogement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon Logement"
+        android:textColor="#148FC0"
+        android:textSize="24sp"
+        android:fontFamily="@font/grenoble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Switch
+        android:id="@+id/switch_autonome_ou_non"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode autonome : "
+        android:textColor="#8BC34A"
+        android:textSize="14sp"
+        android:fontFamily="@font/raleway_semi_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toEndOf="@+id/textView_monLogement"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <ScrollView
+        android:layout_width="358dp"
+        android:layout_height="301dp"
+        android:background="@drawable/btn_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_monLogement"
+        app:layout_constraintVertical_bias="0.109">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fontFamily="@font/raleway_semi_bold">
+
+            <TextView
+                android:id="@+id/textView_tempMaison"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="30dp"
+                android:padding="5dp"
+                android:text="Température de la maison : "
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton_up_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="150dp"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+
+            <TextView
+                android:id="@+id/textView_temperature_entre_fleches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton_down_temperature"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="150dp"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
