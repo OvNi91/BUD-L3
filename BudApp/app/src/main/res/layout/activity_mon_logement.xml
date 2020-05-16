@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".mon_logement">
 
-<<<<<<< HEAD
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="358dp"
@@ -20,58 +19,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_monLogement"
         app:layout_constraintVertical_bias="0.097">
-=======
-    <TextView
-        android:id="@+id/textView_monLogement"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mon Logement"
-        android:textColor="#148FC0"
-        android:textSize="24sp"
-        android:fontFamily="@font/grenoble"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
-
-    <Switch
-        android:id="@+id/switch_autonome_ou_non"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mode autonome : "
-        android:textColor="#8BC34A"
-        android:textSize="14sp"
-        android:fontFamily="@font/raleway_semi_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
-        app:layout_constraintStart_toEndOf="@+id/textView_monLogement"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
-
-    <ScrollView
-        android:layout_width="358dp"
-        android:layout_height="301dp"
-        android:background="@drawable/btn_custom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_monLogement"
-        app:layout_constraintVertical_bias="0.109">
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:fontFamily="@font/raleway_semi_bold"
             android:orientation="vertical">
-=======
-            android:orientation="vertical"
-            android:fontFamily="@font/raleway_semi_bold">
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 
             <TextView
                 android:id="@+id/textView_tempMaison"
@@ -81,12 +34,8 @@
                 android:padding="5dp"
                 android:text="Température de la maison : "
                 android:textColor="#FFFFFF"
-<<<<<<< HEAD
                 android:textSize="14sp"
                 app:fontFamily="@font/raleway_semi_bold" />
-=======
-                android:textSize="14sp" />
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 
             <ImageButton
                 android:id="@+id/imageButton_up_temperature"
@@ -100,19 +49,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-<<<<<<< HEAD
                 android:paddingVertical="2dp"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 app:fontFamily="@font/raleway_light" />
-=======
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:textStyle="bold" />
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 
             <ImageButton
                 android:id="@+id/imageButton_down_temperature"
@@ -122,7 +64,6 @@
                 android:layout_marginHorizontal="150dp"
                 app:srcCompat="@android:drawable/arrow_down_float" />
 
-<<<<<<< HEAD
             <TextView
                 android:id="@+id/textView_lumiere"
                 android:layout_width="match_parent"
@@ -227,13 +168,4 @@
         app:layout_constraintVertical_bias="0.297"
         app:srcCompat="@drawable/graphique" />
 
-=======
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
-        </LinearLayout>
-    </ScrollView>
-
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 </androidx.constraintlayout.widget.ConstraintLayout>

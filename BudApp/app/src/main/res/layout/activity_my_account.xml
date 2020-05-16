@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MyAccount">
 
+
     <TextView
         android:id="@+id/mon_compte_textView"
         android:layout_width="wrap_content"
@@ -15,10 +16,6 @@
         android:textColor="#148FC0"
         android:textSize="24sp"
         app:fontFamily="@font/grenoble"
-<<<<<<< HEAD
-=======
-        app:layout_constraintBottom_toBottomOf="parent"
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +34,6 @@
         app:layout_constraintVertical_bias="0.01"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
-<<<<<<< HEAD
     <TextView
         android:id="@+id/textView_mail"
         android:layout_width="300dp"
@@ -117,99 +113,6 @@
         app:layout_constraintTop_toTopOf="@+id/textView_mail"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_menu_add" />
-=======
-
-    <TextView
-            android:id="@+id/email_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Email"
-            android:textSize="18sp"
-            app:fontFamily="@font/raleway_semi_bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.13"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mon_compte_textView" />
-
-        <TextView
-            android:id="@+id/textView_mdp_text"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="14sp"
-            app:fontFamily="@font/raleway_semi_bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.387"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_motDePasse" />
-
-        <ImageButton
-            android:id="@+id/imageButton_change_motDePasse"
-            android:layout_width="36dp"
-            android:layout_height="34dp"
-            android:background="#00FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.593"
-            app:layout_constraintStart_toEndOf="@+id/textView_mdp_text"
-            app:layout_constraintTop_toTopOf="@+id/textView_mdp_text"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@android:drawable/ic_menu_add" />
-
-        <ImageButton
-            android:id="@+id/button_change_email"
-            android:layout_width="36dp"
-            android:layout_height="34dp"
-            android:background="#00FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.612"
-            app:layout_constraintStart_toEndOf="@+id/textView_mail"
-            app:layout_constraintTop_toTopOf="@+id/textView_mail"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@android:drawable/ic_menu_add" />
-
-        <TextView
-            android:id="@+id/textView_motDePasse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:text="Mot de passe"
-            app:fontFamily="@font/raleway_semi_bold"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.141"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email_textView" />
-
-        <TextView
-            android:id="@+id/mon_compte_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:text="Mon Compte"
-            android:textColor="#148FC0"
-            android:textSize="24sp"
-            app:fontFamily="@font/grenoble"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.161"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView_mail"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            app:fontFamily="@font/raleway_semi_bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView_motDePasse"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.396"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email_textView"
-            app:layout_constraintVertical_bias="0.393" />
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 
     <ScrollView
         android:layout_width="326dp"
@@ -220,12 +123,7 @@
         app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mes_logements_textView"
-<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.649">
-=======
-        app:layout_constraintVertical_bias="0.359"
-        app:fontFamily="@font/raleway_semi_bold">
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -235,50 +133,29 @@
             <TextView
                 android:id="@+id/textView_logement1"
                 android:layout_width="match_parent"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
                 android:layout_height="50dp"
-<<<<<<< HEAD
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
                 android:textSize="18sp"
                 app:fontFamily="@font/raleway_semi_bold" />
-=======
-                app:fontFamily="@font/raleway_semi_bold"
-                android:textSize="18sp" />
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 
             <TextView
                 android:id="@+id/textView_logement2"
                 android:layout_width="match_parent"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
                 android:layout_height="50dp"
-<<<<<<< HEAD
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
                 android:textSize="18sp"
                 app:fontFamily="@font/raleway_semi_bold" />
-=======
-                app:fontFamily="@font/raleway_semi_bold"
-                android:textSize="18sp" />
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 
             <TextView
                 android:id="@+id/textView_logement3"
                 android:layout_width="match_parent"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
                 android:layout_height="50dp"
-<<<<<<< HEAD
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
                 android:textSize="18sp"
                 app:fontFamily="@font/raleway_semi_bold" />
-=======
-                app:fontFamily="@font/raleway_semi_bold"
-                android:textSize="18sp" />
->>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
         </LinearLayout>
     </ScrollView>
 
