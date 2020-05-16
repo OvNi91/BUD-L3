@@ -1,9 +1,14 @@
 package com.example.budapp;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+=======
+import android.os.Bundle;
+import android.view.View;
+>>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
 import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -57,6 +62,7 @@ public class mon_logement extends AppCompatActivity {
             public void onClick(View v) {
             }
         });
+<<<<<<< HEAD
 
         Button myAccount = (Button) findViewById(R.id.button_monCompte_logement);
         myAccount.setOnClickListener(new View.OnClickListener() {
@@ -66,5 +72,7 @@ public class mon_logement extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+=======
+>>>>>>> ba83bfad14f7b3b8105e5e86c129c5ef18280e76
     }
 }
