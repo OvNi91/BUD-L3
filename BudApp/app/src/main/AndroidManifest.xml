@@ -8,8 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".inscription_formulaire"></activity>
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".mon_logement"></activity>
+        <activity android:name=".inscription_formulaire" />
         <activity android:name=".change_password" />
         <activity android:name=".activity_change_mail" />
         <activity android:name=".MainActivity">

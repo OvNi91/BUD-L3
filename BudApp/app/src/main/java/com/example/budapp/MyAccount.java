@@ -3,6 +3,7 @@ package com.example.budapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -53,6 +54,15 @@ public class MyAccount extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), com.example.budapp.change_password.class);
+                startActivity(startIntent);
+            }
+        });
+
+        ImageButton back = (ImageButton) findViewById(R.id.imageButton_return_mainView);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(),mon_logement.class);
                 startActivity(startIntent);
             }
         });
