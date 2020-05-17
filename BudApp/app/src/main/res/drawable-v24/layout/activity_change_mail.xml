@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_change_mail">
+
+    <EditText
+        android:id="@+id/editText_email2"
+        android:layout_width="368dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="adresse@gmail.com"
+        android:padding="15dp"
+        android:inputType="textWebEmailAddress"
+        android:textSize="14sp"
+        android:background="@drawable/et_custom"
+        app:fontFamily="@font/raleway_semi_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_verif"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/button_valider"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:text="Valider"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_custom"
+        app:fontFamily="@font/raleway_semi_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email2"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <TextView
+        android:id="@+id/textView_bonjour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modification de l'adresse mail"
+        android:textColor="#148FC0"
+        android:textSize="24sp"
+        app:fontFamily="@font/grenoble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veuillez changer votre adresse mail ici :"
+        app:fontFamily="@font/raleway_semi_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bonjour"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textView_verif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Veuillez confirmer s'il vous plaît :"
+        app:fontFamily="@font/raleway_semi_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email1" />
+
+    <EditText
+        android:id="@+id/editText_email1"
+        android:layout_width="368dp"
+        android:layout_height="49dp"
+        android:padding="15dp"
+        android:ems="10"
+        android:hint="adresse@gmail.com"
+        android:inputType="textWebEmailAddress"
+        android:textSize="14sp"
+        android:background="@drawable/et_custom"
+        app:fontFamily="@font/raleway_semi_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <ImageButton
+        android:id="@+id/imageButton_retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView_bonjour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

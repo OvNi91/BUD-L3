@@ -1,11 +1,14 @@
 package com.example.budapp;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import android.os.Bundle;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,31 +17,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button mon_compte = (Button) findViewById(R.id.button_myAccount);
-        mon_compte.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), MyAccount.class);
-                startActivity(startIntent);
-            }
-        });
+        ViewPager viewPager = findViewById(R.id.viewPager);
 
-        Button insc = (Button) findViewById(R.id.button_formulaire);
-        insc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(),inscription_formulaire.class);
-                startActivity(startIntent);
-            }
-        });
+        AuthenticationPagerAdapter pagerAdapter = new AuthenticationPagerAdapter(getSupportFragmentManager());
+        pagerAdapter.addFragmet(new fragment_login());
+        pagerAdapter.addFragmet(new fragment_register());
+        viewPager.setAdapter(pagerAdapter);
+    }
 
-        Button logement = (Button) findViewById(R.id.button_monLogement);
-        logement.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(),mon_logement.class);
-                startActivity(startIntent);
-            }
-        });
+    class AuthenticationPagerAdapter extends FragmentPagerAdapter {
+        private ArrayList<Fragment> fragmentList = new ArrayList<>();
+
+        public AuthenticationPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int i) {
+            return fragmentList.get(i);
+        }
+
+        @Override
+        public int getCount() {
+            return fragmentList.size();
+        }
+
+        void addFragmet(Fragment fragment) {
+            fragmentList.add(fragment);
+        }
     }
 }
