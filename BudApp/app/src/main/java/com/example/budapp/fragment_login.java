@@ -38,7 +38,7 @@ public class fragment_login extends Fragment {
                 EditText username = (EditText) myFragmentView.findViewById(R.id.et_email);
                 EditText password = (EditText) myFragmentView.findViewById(R.id.et_password);
                 Intent intent = new Intent(myFragmentView.getContext().getApplicationContext(), mon_logement.class);
-                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+                if (username.getText().toString().equals("hugo.butery@efrei.net") && password.getText().toString().equals("symbioz")) {
                     startActivity(intent);
                     System.out.println("connecction successfull");
                     //correcct password

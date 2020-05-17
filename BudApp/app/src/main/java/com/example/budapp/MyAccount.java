@@ -34,9 +34,9 @@ public class MyAccount extends AppCompatActivity {
 
 
 
-        String test = new String("hugo.butery@efrei.fr");
+        String test = new String("hugo.butery@efrei.net");
         email.setText(test);
-        mdp.setText("password");
+        mdp.setText("*******");
 
 
 

@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class mon_logement extends AppCompatActivity {
@@ -63,6 +64,15 @@ public class mon_logement extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), MyAccount.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button disconnect = (Button) findViewById(R.id.button_deconnection);
+        disconnect.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(startIntent);
             }
         });
